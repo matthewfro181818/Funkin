@@ -105,14 +105,14 @@ class ResultsMusicDialog extends DefaultPageDialog
     }
 
     rankMusicIntroLoad.onClick = function(_) {
-      FileUtil.browseForBinaryFile("Load Sound File", [FileUtil.FILE_EXTENSION_INFO_SND], function(_) {
+      FileUtil.browseForBinaryFile("Load Sound File", [FileUtil.FILE_EXTENSION_INFO_ZIP], function(_) {
         if (_?.fullPath == null) return;
         rankMusicIntroField.text = _.fullPath;
       });
     }
 
     rankMusicSongLoad.onClick = function(_) {
-      FileUtil.browseForBinaryFile("Load Sound File", [FileUtil.FILE_EXTENSION_INFO_SND], function(_) {
+      FileUtil.browseForBinaryFile("Load Sound File", [FileUtil.FILE_EXTENSION_INFO_ZIP], function(_) {
         if (_?.fullPath == null) return;
         rankMusicSongField.text = _.fullPath;
       });
