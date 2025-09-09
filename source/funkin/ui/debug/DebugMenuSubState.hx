@@ -139,14 +139,6 @@ class DebugMenuSubState extends MusicBeatSubState
     FlxG.switchState(() -> new funkin.ui.debug.char.CharCreatorState());
   }
 
-  #if sys
-  function openLogFolder()
-  {
-    FileUtil.openFolder(CrashHandler.LOG_FOLDER);
-  }
-  #end
-
-
   function openTestResultsScreen():Void
   {
     FlxG.switchState(() -> new funkin.ui.debug.results.ResultsDebugSubState());
