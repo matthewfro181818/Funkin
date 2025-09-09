@@ -215,10 +215,12 @@ class CharacterRegistry
       return null;
     }
 
-    var charData:CharacterData = characterCache.get(charId);
-    var charScriptClass:String = characterScriptedClass.get(charId);
 
-    var char:BaseCharacter;
+    var charData:Null<CharacterData> = characterCache.get(charId);
+    var charScriptClass:Null<String> = characterScriptedClass.get(charId);
+
+    var char:Null<BaseCharacter> = null;
+
 
     if (charScriptClass != null)
     {
