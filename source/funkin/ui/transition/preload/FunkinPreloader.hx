@@ -920,7 +920,7 @@ class FunkinPreloader extends FlxBasePreloader
    */
   function isLandscapeFlipped():Bool
   {
-    //return lime.system.System.getDisplayOrientation(0) == DISPLAY_ORIENTATION_LANDSCAPE_FLIPPED;
+    return lime.system.System.getDisplayOrientation(0) == DISPLAY_ORIENTATION_LANDSCAPE_FLIPPED;
   }
 
   function immediatelyStartGame():Void
