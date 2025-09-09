@@ -49,7 +49,7 @@ class AddAnimDialog extends DefaultPageDialog
         return;
       }
 
-      var animData = char.getAnimationData(charAnimDropdown.safeSelectedItem.text);
+      var animData = char.getAnimationData(charAnimDropdown.selectedItem.text);
       if (animData == null) return;
 
       charAnimName.text = animData.name;

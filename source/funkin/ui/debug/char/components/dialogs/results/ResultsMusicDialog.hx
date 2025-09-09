@@ -36,7 +36,7 @@ class ResultsMusicDialog extends DefaultPageDialog
 
     rankMusicDrop.selectedIndex = 0;
     rankMusicDrop.onChange = function(_) {
-      var daRank = daPage.getRankFromString(rankMusicDrop.safeSelectedItem.text);
+      var daRank = daPage.getRankFromString(rankMusicDrop.selectedItem.text);
 
       rankMusicFrame.pauseEvent(UIEvent.CHANGE, true);
 
@@ -49,7 +49,7 @@ class ResultsMusicDialog extends DefaultPageDialog
     rankMusicIntroField.onChange = rankMusicSongField.onChange = function(_) {
       daPage.setStatusOfEverything(false);
 
-      var daRank = daPage.getRankFromString(rankMusicDrop.safeSelectedItem.text);
+      var daRank = daPage.getRankFromString(rankMusicDrop.selectedItem.text);
       daPage.rankMusicMap[daRank].destroy();
 
       // bytes check!

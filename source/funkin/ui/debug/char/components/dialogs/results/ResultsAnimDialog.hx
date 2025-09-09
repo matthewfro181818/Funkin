@@ -66,9 +66,9 @@ class ResultsAnimDialog extends DefaultPageDialog
 
   function get_currentRank():ScoringRank
   {
-    if (rankDropdown.safeSelectedItem == null) return PERFECT_GOLD;
+    if (rankDropdown.selectedItem == null) return PERFECT_GOLD;
 
-    switch (rankDropdown.safeSelectedItem.text)
+    switch (rankDropdown.selectedItem.text)
     {
       case "Perfect Gold":
         return PERFECT_GOLD;
@@ -423,7 +423,7 @@ private class RankAnimationData extends VBox
   function get_animData():PlayerResultsAnimationData
   {
     return {
-      renderType: animRenderType.safeSelectedItem.value,
+      renderType: animRenderType.selectedItem.value,
       assetPath: animAssetPath.text,
       offsets: [animOffsetX.value, animOffsetY.value],
       zIndex: animZIndex.value,
@@ -494,7 +494,7 @@ private class RankAnimationData extends VBox
     }
 
     animLoadAsset.onClick = function(_) {
-      var isAtlas:Bool = (animRenderType.safeSelectedItem.value == "animateatlas");
+      var isAtlas:Bool = (animRenderType.selectedItem.value == "animateatlas");
 
       FileUtil.browseForBinaryFile("Load Animation File", [isAtlas ? FileUtil.FILE_EXTENSION_INFO_ZIP : FileUtil.FILE_EXTENSION_INFO_PNG], function(_) {
         if (_?.fullPath == null) return;

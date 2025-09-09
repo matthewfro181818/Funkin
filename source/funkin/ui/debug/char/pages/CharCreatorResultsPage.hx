@@ -107,7 +107,7 @@ class CharCreatorResultsPage extends CharCreatorDefaultPage
   {
     var animDialog:ResultsAnimDialog = cast dialogMap[RankAnims];
 
-    labelRank.text = animDialog.rankDropdown.safeSelectedItem.text;
+    labelRank.text = animDialog.rankDropdown.selectedItem.text;
     labelRank.styleNames = "infoText";
     labelRank.verticalAlign = "center";
 
@@ -388,7 +388,7 @@ class CharCreatorResultsPage extends CharCreatorDefaultPage
 
     var rank = animDialog.currentRank;
 
-    labelRank.text = animDialog.rankDropdown.safeSelectedItem.text;
+    labelRank.text = animDialog.rankDropdown.selectedItem.text;
 
     var newMusic = rankMusicMap[rank];
     previousMusic = newMusic;
