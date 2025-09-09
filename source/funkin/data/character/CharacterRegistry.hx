@@ -2,7 +2,6 @@ package funkin.data.character;
 
 import funkin.data.animation.AnimationData;
 import funkin.data.character.CharacterData;
-import funkin.data.character.CharacterRenderType;
 import funkin.data.character.migrator.CharacterData_v1_0_0;
 import funkin.modding.events.ScriptEvent;
 import funkin.modding.events.ScriptEventDispatcher;
@@ -215,11 +214,10 @@ class CharacterRegistry
       return null;
     }
 
+    var charData:CharacterData = characterCache.get(charId);
+    var charScriptClass:String = characterScriptedClass.get(charId);
 
-    var charData:Null<CharacterData> = characterCache.get(charId);
-    var charScriptClass:Null<String> = characterScriptedClass.get(charId);
-
-    var char:Null<BaseCharacter> = null;
+    var char:BaseCharacter;
 
     if (charScriptClass != null)
     {
