@@ -221,7 +221,6 @@ class CharacterRegistry
 
     var char:Null<BaseCharacter> = null;
 
-
     if (charScriptClass != null)
     {
       switch (charData.renderType)
