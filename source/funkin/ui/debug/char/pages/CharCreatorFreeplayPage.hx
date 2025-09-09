@@ -350,7 +350,7 @@ class CharCreatorFreeplayPage extends CharCreatorDefaultPage
     {
       var ogText = elderScrolls[i];
       var ogColor = ogText.grpTexts.members[0].color;
-      var ogBold = ogText.grpTexts.members[0].bold;
+      var ogBold = ogText.grpTexts.members[0];
 
       ogText.grpTexts.clear();
       ogText.active = false;
