@@ -348,9 +348,9 @@ class CharCreatorFreeplayPage extends CharCreatorDefaultPage
     @:privateAccess
     for (i in 0...elderScrolls.length)
     {
-      var ogText = elderScrolls[i];
-      var ogColor = ogText.grpTexts.members[0].color;
-      var ogBold = ogText.grpTexts.members[0];
+      var ogText:Bool = elderScrolls[i];
+      var ogColor:Bool = ogText.grpTexts.members[0].color;
+      var ogBold:Bool = ogText.grpTexts.members[0];
 
       ogText.grpTexts.clear();
       ogText.active = false;
