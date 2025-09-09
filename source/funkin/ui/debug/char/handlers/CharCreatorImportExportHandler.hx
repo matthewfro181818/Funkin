@@ -139,13 +139,6 @@ class CharCreatorImportExportHandler
     playerData.freeplayStyle = freeplayPage.useStyle ?? charID;
     playerData.unlocked = charSelectDialog.playerDataUnlocked.selected;
 
-    playerData.charSelect = new PlayerCharSelectData(selectPage.position,
-      {
-        assetPath: "charSelect/" + charID + "-gf",
-        animInfoPath: "charSelect/gfAnimInfo", // somewhat cheap way of preventing a crash, considering this feature is unused
-        visualizer: selectPage.gfUsesVis
-      });
-
     if (selectPage.gfFile != null)
     {
       for (file in FileUtil.readZIPFromBytes(selectPage.gfFile.bytes))
