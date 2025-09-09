@@ -20,7 +20,7 @@ class FreeplayDJAnimsDialog extends DefaultPageDialog
         return;
       }
 
-      if ((djAnimList.safeSelectedItem?.text ?? "") == djAnimName.text) // update instead of add
+      if ((djAnimList.selectedItem?.text ?? "") == djAnimName.text) // update instead of add
       {
         var animData = daPage.djAnims[daPage.currentDJAnimation];
 
