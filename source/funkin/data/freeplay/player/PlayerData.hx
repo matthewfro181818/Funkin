@@ -279,6 +279,11 @@ class PlayerCharSelectData
    */
   @:optional
   public var gf:PlayerCharSelectGFData;
+
+  public function new(/* add parameters if needed */)
+  {
+    // Initialize fields here
+  }
 }
 
 typedef PlayerCharSelectGFData =
