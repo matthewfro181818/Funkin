@@ -11,7 +11,6 @@ import funkin.play.character.BaseCharacter;
 import funkin.play.character.MultiSparrowCharacter;
 import funkin.play.character.PackerCharacter;
 import funkin.play.character.SparrowCharacter;
-import funkin.play.character.CharacterData.CharacterRenderType;
 import funkin.play.character.ScriptedCharacter.ScriptedAnimateAtlasCharacter;
 import funkin.play.character.ScriptedCharacter.ScriptedBaseCharacter;
 import funkin.play.character.ScriptedCharacter.ScriptedMultiSparrowCharacter;
